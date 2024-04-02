@@ -1,37 +1,21 @@
-body{
-    /*background-image:url("/img/papel-de-parede-cafeteria.jpg");*/
-
-}
+/*body{
+    background-image: url("/img/papel-de-parede-cafeteria.jpg");
+    background-color: #923d0c;
+    color:#ffffff;
+}*/
 h1{
     text-align: center;
 }
-.botaoConfirmar{
-    background: #923d0c;
-    color: #ffffff;
-    border-style: outset;
-    border-color: #806716;
-    height: 35px;
-    width: 130px;
-    font: bold 12px arial,sans-serif;
-    text-shadow: none;
-    border-radius: 10px;
-    
-}
-.linhaBotao{
-    text-align: center;
-    
-}
 .inp_num{
-    width: 50px;
+    width:50px;
     border-radius: 10px;
-    
-}
-.pai{
     
 }
 .container {
-    background-color: bisque;
-    justify-content: center;
+    /*background-color: #923d0c;*/
+    margin: 0% 20%;
+
+
 }
 .flex-container{
     display: flex;
@@ -39,13 +23,35 @@ h1{
     margin-bottom: 10px;
     
 }
-
-li
-{
-    list-style: circle;
-    margin: 30px;
-}
 img{
     width: 40px;
     height: 20px;
+}
+.linhaBotao
+{
+    background-color: rgb(201, 138, 57);
+    height: 60px;
+    margin-top: 40px;
+}
+.botaoConfirmar{
+    background: #923d0c;
+    color: #fffdfd;
+    border-color: #923d0c;
+    height: 35px;
+    width: 130px;
+    font: bold 12px arial,sans-serif;
+    text-shadow: none;
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-right: 15%;
+    position: absolute;
+    right: 5%;
+}
+.tot{
+    font: bold 20px arial,sans-serif;
+    color: #ffffff;
+    position:absolute;
+    margin-top: 17px;
+    left: 20%;
+    
 }

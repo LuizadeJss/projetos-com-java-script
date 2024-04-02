@@ -8,28 +8,30 @@
         <div>
             <form id="pedido">
                 <h1>Pedido</h1>
-                <div class="flex-container">
-                    <label>Nome do Cliente: </label>
-                    <input type="text" name="nome_cliente">
-                    
-                </div>
+                <div class="container">
+                    <div class="flex-container">
+                        <label>Nome do Cliente: </label>
+                        <input type="text" name="nome_cliente">
+                        
+                    </div>
 
-                <div class="flex-container">
-                    <label>Tipo de café: </label>
-                    <select name="tipo_cafe" id="cafe">
-                        <option>Caramelo</option>
-                        <option>Latte</option>
-                    </select>
-                </div>
-                
-                <div class="flex-container">
-                    <label>Tamanho:</label>
-                    <select name="tamanho_cafe" id="tamanho">
-                        <option>P</option>
-                        <option>M</option>
-                        <option>G</option>
-                    </select>
+                    <div class="flex-container">
+                        <label>Tipo de café: </label>
+                        <select>
+                            <option>Caramelo</option>
+                            <option>Latte</option>
+                        </select>
+                    </div>
                     
+                    <div class="flex-container">
+                        <label>Tamanho:</label>
+                        <select class="inp_num">
+                            <option>P</option>
+                            <option>M</option>
+                            <option>G</option>
+                        </select>
+                        
+                    </div>
                 </div>
                 <div class="pai">
                     <div class="container"> 
@@ -55,7 +57,10 @@
                     </div>
                 </div>
                     <div class="linhaBotao">
-                        <button type="submit" class="botaoConfirmar" id="salvar">Confirmar pedido</button>
+                        <div class="itens-linha">
+                            <label class="tot">Total: </label>
+                            <button type="submit" class="botaoConfirmar" id="salvar">Confirmar pedido</button>
+                        </div>
                     </div>
                 
             </form>
