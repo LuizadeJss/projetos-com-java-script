@@ -1,0 +1,51 @@
+body{
+    /*background-image:url("/img/papel-de-parede-cafeteria.jpg");*/
+
+}
+h1{
+    text-align: center;
+}
+.botaoConfirmar{
+    background: #923d0c;
+    color: #ffffff;
+    border-style: outset;
+    border-color: #806716;
+    height: 35px;
+    width: 130px;
+    font: bold 12px arial,sans-serif;
+    text-shadow: none;
+    border-radius: 10px;
+    
+}
+.linhaBotao{
+    text-align: center;
+    
+}
+.inp_num{
+    width: 50px;
+    border-radius: 10px;
+    
+}
+.pai{
+    
+}
+.container {
+    background-color: bisque;
+    justify-content: center;
+}
+.flex-container{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 10px;
+    
+}
+
+li
+{
+    list-style: circle;
+    margin: 30px;
+}
+img{
+    width: 40px;
+    height: 20px;
+}

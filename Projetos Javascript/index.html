@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cafeteria</title>
+        <link  rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div>
+            <form id="pedido">
+                <h1>Pedido</h1>
+                <div class="flex-container">
+                    <label>Nome do Cliente: </label>
+                    <input type="text" name="nome_cliente">
+                    
+                </div>
+
+                <div class="flex-container">
+                    <label>Tipo de café: </label>
+                    <select name="tipo_cafe" id="cafe">
+                        <option>Caramelo</option>
+                        <option>Latte</option>
+                    </select>
+                </div>
+                
+                <div class="flex-container">
+                    <label>Tamanho:</label>
+                    <select name="tamanho_cafe" id="tamanho">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                    </select>
+                    
+                </div>
+                <div class="pai">
+                    <div class="container"> 
+                        <h2>Personalização</h2>
+
+                        <div class="flex-container">                     
+                            <label>Adição de açúcar</label>
+                            <input type="number" class="inp_num">  
+                            
+                        </div>
+                        
+
+                        <div class="flex-container">
+                            <label>Adição de leite</label>
+                            <input type="number" class="inp_num">
+                        </div>
+                        
+                        <div class="flex-container">                    
+                            <label>Calda de chocolate</label>
+                            <input type="number" class="inp_num">
+                        </div>
+                                    
+                    </div>
+                </div>
+                    <div class="linhaBotao">
+                        <button type="submit" class="botaoConfirmar" id="salvar">Confirmar pedido</button>
+                    </div>
+                
+            </form>
+        </div>
+        <script src="/scripts/javascript.js"></script>
+    </body>
+</html>
