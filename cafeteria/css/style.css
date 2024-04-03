@@ -1,45 +1,69 @@
-/*body{
-    background-image: url("/img/papel-de-parede-cafeteria.jpg");
-    background-color: #923d0c;
-    color:#ffffff;
-}*/
-h1{
+body{
+   /* background-image: url("../img/fundo2.avif");*/
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: #693306;
+    font-weight: bold;
+}
+label{
+    font-family:cursive;
+}
+#nome-cliente{
+    font-weight: bold;
+}
+.titulo{
     text-align: center;
+    font-size: 30px;
+    color: #693306;
+    margin: 5%;
 }
 .inp_num{
     width:50px;
     border-radius: 10px;
-    
+    text-align: center;
+    font-family:cursive;
 }
 .container {
     /*background-color: #923d0c;*/
-    margin: 0% 20%;
-
+    margin:0% 10%;
+    border: 2px dotted #693306;
+    margin-bottom: 10px;
 
 }
 .flex-container{
     display: flex;
-    justify-content:space-between;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    margin: 10px 40px;
     
 }
-img{
-    width: 40px;
-    height: 20px;
+.perso{
+    text-align: center;
 }
 .linhaBotao
 {
-    background-color: rgb(201, 138, 57);
+    background-color: #693306;
     height: 60px;
     margin-top: 40px;
+    border-radius: 10px;
 }
-.botaoConfirmar{
-    background: #923d0c;
-    color: #fffdfd;
-    border-color: #923d0c;
+.btn-add{
+    background: #693306;
+    color: hsl(0, 0%, 100%);
+    border-color: #693306;
     height: 35px;
     width: 130px;
-    font: bold 12px arial,sans-serif;
+    font: bold 13px cursive;
+    
+    border-radius: 10px;
+    margin: 20px;
+}
+.botaoConfirmar{
+    background: #ffffff;
+    color: #693306;
+    border-color: #ffffff;
+    height: 35px;
+    width: 130px;
+    font: bold 13px cursive;
     text-shadow: none;
     border-radius: 10px;
     margin-top: 12px;
@@ -48,10 +72,44 @@ img{
     right: 5%;
 }
 .tot{
-    font: bold 20px arial,sans-serif;
+    font: bold 20px cursive;
     color: #ffffff;
     position:absolute;
-    margin-top: 17px;
+    margin-top: 13px;
     left: 20%;
     
+}
+.select-cafe{
+    font-family:cursive;
+    background-color: #ffffff;
+    color: #693306;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+.container-itens{
+    
+    margin: 30px auto;
+    width: 81%;
+}
+.item{
+    border-radius: 10px;
+    background-color: #693306;
+    color: #ffffff;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.alinhar-itens{
+    text-align: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.descricao{
+    font-size: 12px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
 }

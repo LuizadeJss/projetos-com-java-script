@@ -1,0 +1,16 @@
+.container{
+    text-align: center;
+    left: 25%;  
+    right: 25%;
+    height: 100px;
+}
+.input-nome{
+    border-radius: 10px;
+    height: 20px;
+}
+.btn-confirmar{
+    border-radius: 10px;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+}

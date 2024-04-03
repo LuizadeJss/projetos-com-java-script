@@ -3,68 +3,90 @@
     <head>
         <title>Cafeteria</title>
         <link  rel="stylesheet" type="text/css" href="css/style.css">
+        
     </head>
     <body>
         <div>
             <form id="pedido">
-                <h1>Pedido</h1>
+                <div class="titulo">
+                    <label>Pedido <label id="nome-cliente"></label></label>
+                    <script src="scripts/javascript2.js"></script>
+                </div>
                 <div class="container">
-                    <div class="flex-container">
-                        <label>Nome do Cliente: </label>
-                        <input type="text" name="nome_cliente">
-                        
-                    </div>
-
-                    <div class="flex-container">
-                        <label>Tipo de café: </label>
-                        <select>
+                     <div class="flex-container">
+                         <label>Tipo de café: </label>
+                        <select class="select-cafe">
                             <option>Caramelo</option>
                             <option>Latte</option>
+                            <option>Macchiato</option>
                         </select>
-                    </div>
-                    
+                     </div>
+                        
                     <div class="flex-container">
                         <label>Tamanho:</label>
-                        <select class="inp_num">
-                            <option>P</option>
-                            <option>M</option>
-                            <option>G</option>
-                        </select>
-                        
+                        <select class="select-cafe">
+                            <option>Pequeno</option>
+                            <option>Médio</option>
+                            <option>Grande</option>
+                        </select>                    
                     </div>
-                </div>
-                <div class="pai">
-                    <div class="container"> 
-                        <h2>Personalização</h2>
-
-                        <div class="flex-container">                     
-                            <label>Adição de açúcar</label>
-                            <input type="number" class="inp_num">  
+                    
+                    <h2 class="perso">Personalização</h2>
+                    
+                    <div class="flex-container">                     
+                        <label>Adição de açúcar</label>
+                        <input type="number" class="inp_num">                    
+                    </div>
+                           
+                    <div class="flex-container">
+                        <label>Adição de leite</label>
+                        <input type="number" class="inp_num">
+                    </div>
                             
-                        </div>
-                        
-
-                        <div class="flex-container">
-                            <label>Adição de leite</label>
-                            <input type="number" class="inp_num">
-                        </div>
-                        
-                        <div class="flex-container">                    
-                            <label>Calda de chocolate</label>
-                            <input type="number" class="inp_num">
-                        </div>
-                                    
+                     <div class="flex-container">                    
+                        <label>Calda de chocolate</label>
+                        <input type="number" class="inp_num">
                     </div>
+                    <button class="btn-add">Adicionar item</button>                     
                 </div>
+                    <div class="container-itens">
+                        <div class="item">
+                            <div class="alinhar-itens">
+                                <label>Macchiato</label>
+                                <br>
+                                <label class="descricao">Adicionar: </label>
+                            </div>
+                            <div class="alinhar-itens">
+                                <label>R$ 7.00</label>
+                                <br>
+                                <input type="number" class="inp_num" style="margin-top: 10px;">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="alinhar-itens">
+                                <label>Latte</label>
+                                <br>
+                                <label class="descricao">Adicionar: </label>
+                            </div>
+                            <div class="alinhar-itens">
+                                <label>R$ 5.00</label>
+                                <br>
+                                <input type="number" class="inp_num" style="margin-top: 10px;">
+                            </div>
+                        </div>
+                    </div>
+               
                     <div class="linhaBotao">
                         <div class="itens-linha">
-                            <label class="tot">Total: </label>
+                            <label class="tot">
+                                Total: R$<label>0,00</label>
+                            </label>
                             <button type="submit" class="botaoConfirmar" id="salvar">Confirmar pedido</button>
                         </div>
                     </div>
-                
+                    
             </form>
         </div>
-        <script src="/scripts/javascript.js"></script>
+       
     </body>
 </html>
