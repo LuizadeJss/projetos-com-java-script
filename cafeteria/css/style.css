@@ -1,12 +1,5 @@
 body{
    /* background-image: url("../img/fundo2.avif");*/
-    background-size:cover;
-    background-repeat: no-repeat;
-    color: #693306;
-    font-weight: bold;
-}
-label{
-    font-family:cursive;
 }
 #nome-cliente{
     font-weight: bold;
@@ -19,14 +12,13 @@ label{
 }
 .inp_num{
     width:50px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
-    font-family:cursive;
 }
 .container {
     /*background-color: #923d0c;*/
     margin:0% 10%;
-    border: 2px dotted #693306;
+    /* border: 1px solid #693306; */
     margin-bottom: 10px;
 
 }
@@ -34,11 +26,10 @@ label{
     display: flex;
     justify-content: space-between;
     margin: 10px 40px;
-    
 }
-.perso{
+/* .perso{
     text-align: center;
-}
+} */
 .linhaBotao
 {
     background-color: #693306;
@@ -52,9 +43,7 @@ label{
     border-color: #693306;
     height: 35px;
     width: 130px;
-    font: bold 13px cursive;
-    
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 20px;
 }
 .botaoConfirmar{
@@ -63,7 +52,6 @@ label{
     border-color: #ffffff;
     height: 35px;
     width: 130px;
-    font: bold 13px cursive;
     text-shadow: none;
     border-radius: 10px;
     margin-top: 12px;
@@ -72,43 +60,45 @@ label{
     right: 5%;
 }
 .tot{
-    font: bold 20px cursive;
     color: #ffffff;
     position:absolute;
-    margin-top: 13px;
+    margin-top: 20px;
     left: 20%;
     
 }
 .select-cafe{
-    font-family:cursive;
     background-color: #ffffff;
     color: #693306;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100px;
     text-align: center;
 }
 .container-itens{
-    
     margin: 30px auto;
     width: 81%;
 }
+.itens-adicionais{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted ;
+    margin: 10px 20px;
+}
 .item{
-    border-radius: 10px;
-    background-color: #693306;
-    color: #ffffff;
+ 
     height: 80px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 5px;
+    border-bottom: 1px dotted ;
 
 }
 .alinhar-itens{
-    text-align: center;
     margin: 10px 20px;
     margin-bottom: 20px;
 }
 .descricao{
+    color: rgb(71, 69, 69);
     font-size: 12px;
     font-style: oblique;
     font-family: 'Times New Roman', Times, serif;
