@@ -6,12 +6,24 @@
         
     </head>
     <body>
-        <div>
-            <form action="pedido_confirmado.html">
+        <header>
+            <div class="menu-simples"></div>
                 <div class="titulo">
-                    <label>Pedido <label id="nome-cliente"></label></label>
-                    <script src="scripts/javascript2.js"></script>
-                </div>
+                
+                    <label>Pedido de <label id="nome-cliente">(nome cliente)</label></label>
+                    <script>
+                        var nome = document.querySelector("#nome-cliente");
+                        nome.innerHTML = localStorage.getItem('nomeText');
+                    </script>
+                </div>   
+        
+                 
+            </div>    
+        </header>
+        
+        <div>
+            <form action="pedido_confirmado.html" id="pedido">
+                    <script src="scripts/javascript.js" defer></script>
                 <div class="container">
                      <div class="itens-adicionais">
                         <div class="alinhar-itens">
@@ -19,7 +31,7 @@
                         </div>
 
                         <div class="alinhar-itens">
-                            <select class="select-cafe">
+                            <select class="select-cafe" name="tipoCafe">
                                 <option>Caramelo</option>
                                 <option>Latte</option>
                                 <option>Macchiato</option>
@@ -32,7 +44,7 @@
                             <label>Tamanho:</label>
                         </div>
                         <div class="alinhar-itens">
-                            <select class="select-cafe">
+                            <select class="select-cafe" name="tamanhoCafe">
                                 <option>Pequeno</option>
                                 <option>Médio</option>
                                 <option>Grande</option>
@@ -40,14 +52,14 @@
                         </div>                
                     </div>
                     
-                    <h3>Adicionais</h3>
+                    <h3 style="text-align: center;"> - Adicionais -</h3>
                     
                     <div class="itens-adicionais">
                         <div class="alinhar-itens">                     
                             <label>Açúcar</label>
                         </div>
                         <div class="alinhar-itens">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" name="addAcucar">
                         </div>         
                     </div>
                     
@@ -57,7 +69,7 @@
                             
                         </div>
                         <div class="alinhar-itens">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" name="addCaldaChoc">
                         </div> 
                     </div>
 
@@ -66,7 +78,7 @@
                             <label>Caramelo</label>
                         </div>
                         <div class="alinhar-itens">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" name="addCaramelo">
                         </div>                    
                     </div>
 
@@ -75,49 +87,41 @@
                             <label>Leite</label>
                         </div>
                         <div class="alinhar-itens">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" name="addLeite">
                         </div> 
                     </div>
                             
-                    <button class="btn-add">Adicionar item</button>                     
+                    <button id="btn-add-item" class="btn-add">Adicionar item</button>                     
                 </div>
                     <hr>
-                    <div class="container-itens">
-                        <h2>Items</h2>
-                        <div class="item">
-                            <div class="alinhar-itens">
-                                <label>Macchiato</label>
-                                <label>(Médio)</label>
-                                <br>
-                                <label class="descricao">Adicionar: </label>
-                                <label class="descricao">Açúcar</label>
+                    <h2 style="margin: 20px 40px;">Itens</h2>
+                    <table width="100%" id="itensPedidos">
+                        <thead>
+                            <div>
+                                <th>Café</th>
+                                <th>Tamanho</th>
+                                <th>Adicionar</th>
+                                <th>Qntd.</th>
                             </div>
-                            <div class="alinhar-itens">
-                                <label>R$ 7.00</label>
-                                <br>
-                                <input type="number" class="inp_num" style="margin-top: 10px;">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="alinhar-itens">
-                                <label>Latte</label>
-                                <label>(Pequeno)</label>
-                            </div>
-                            <div class="alinhar-itens">
-                                <label>R$ 5.00</label>
-                                <br>
-                                <input type="number" class="inp_num" style="margin-top: 10px;">
-                            </div>
-                        </div>
-                    </div>
-               
+                        </thead>
+                        <tbody>
+                            <!-- <tr class="item">
+                                <td class="alinhar-itens">
+                                    <label>Macchiato</label>
+                                    <br>
+                                    <label class="descricao">Adicionar: </label>
+                                </td>
+                                <td class="alinhar-itens">
+                                    <label>R$: 5.00</label>
+                                    <br>
+                                    <input type="number" class="inp_num" style="margin-top: 10px;">
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    
                     <div class="linhaBotao">
-                        <div class="itens-linha">
-                            <label class="tot">
-                                Total: R$<label>0,00</label>
-                            </label>
-                            <button type="submit" class="botaoConfirmar" id="salvar">Confirmar pedido</button>
-                        </div>
+                        <button type="submit" class="botaoConfirmar" id="salvarPedido">Confirmar pedido</button>
                     </div>
                     
             </form>

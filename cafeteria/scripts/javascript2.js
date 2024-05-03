@@ -1,3 +1,2 @@
-console.log("teste");
-var campoNome = document.getElementById('nome-cliente');
-campoNome.textContent = "Luiza de Jesus";
+var nome = document.querySelector("#nome-cliente");
+nome.innerHTML = localStorage.getItem('valueText');

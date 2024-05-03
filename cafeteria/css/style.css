@@ -1,8 +1,6 @@
-body{
-   /* background-image: url("../img/fundo2.avif");*/
-}
-#nome-cliente{
-    font-weight: bold;
+.menu-simples{
+    background-color:#693306;
+    height: 40px;
 }
 .titulo{
     text-align: center;
@@ -27,11 +25,10 @@ body{
     justify-content: space-between;
     margin: 10px 40px;
 }
-/* .perso{
-    text-align: center;
-} */
 .linhaBotao
 {
+    display: flex;
+    justify-content: center;
     background-color: #693306;
     height: 60px;
     margin-top: 40px;
@@ -54,10 +51,8 @@ body{
     width: 130px;
     text-shadow: none;
     border-radius: 10px;
-    margin-top: 12px;
-    margin-right: 15%;
-    position: absolute;
-    right: 5%;
+     margin-top: 12px; 
+    text-align: center;
 }
 .tot{
     color: #ffffff;
@@ -68,14 +63,11 @@ body{
 }
 .select-cafe{
     background-color: #ffffff;
-    color: #693306;
+    color:#838383;
     border-radius: 5px;
     width: 100px;
+    height: 25px;
     text-align: center;
-}
-.container-itens{
-    margin: 30px auto;
-    width: 81%;
 }
 .itens-adicionais{
     display: flex;
@@ -83,18 +75,38 @@ body{
     border-bottom: 1px dotted ;
     margin: 10px 20px;
 }
+tr{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center; 
+    /* margin-top: 5px; */
+    border-bottom: 1px dotted;
+}
+th{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+td {
+    margin: 10px 40px;
+}
+/* .cabecalho-tabela{
+    margin: 10px 40px;
+    margin-bottom: 20px;
+} */
 .item{
  
     height: 80px;
     display: flex;
     justify-content: space-between;
-    /* text-align: center; */
-    margin-top: 5px;
+    text-align: center;
+    margin: 5px 40px;
     border-bottom: 1px dotted ;
 
 }
 .alinhar-itens{
-    margin: 10px 20px;
+    margin: 10px 40px;
     margin-bottom: 20px;
 }
 .descricao{

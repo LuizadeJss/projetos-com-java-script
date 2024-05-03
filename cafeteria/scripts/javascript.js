@@ -1,13 +1,50 @@
-var botaoSalvar = document.querySelector("#salvar");
+var botaoSalvarItem = document.querySelector("#btn-add-item");
+var botaoConfirmarPedido = document.querySelector("#salvarPedido");
 
-botaoSalvar.addEventListener("click", function(event){
+botaoSalvarItem.addEventListener("click", function (event){
     event.preventDefault();
-    var nome_cliente = document.querySelector('#cliente').value;
-    var tipo_cafe = document.querySelector('#cafe').value;
-    var tamanho_cafe = document.querySelector('#tamanho').value;
-    var p_acucar= document.querySelector('#acucar').value;
-    var p_leite= document.querySelector('#leite').value;
-    var p_chocolate= document.querySelector('#chocolate').value;
 
-    console.log(nome_cliente, tipo_cafe, tamanho_cafe, p_acucar, p_leite, p_chocolate)
+    var linhaItem = document.createElement("tr");
+
+    //cria as celulas
+    var celulaTipoCafe = document.createElement("td");
+    var celulaTamanhoCafe = document.createElement("td");
+    var celulaDescricao = document.createElement("td");
+    var celulaInput = document.createElement("td");
+    var celulaInput = document.createElement("td");
+
+    //insere os campos do html na celula
+    celulaTipoCafe.textContent =  pedido.tipoCafe.value;
+    celulaTamanhoCafe.textContent = pedido.tamanhoCafe.value;
+    
+    if(pedido.addAcucar.checked)
+        celulaDescricao.innerHTML += "Açúcar <br>" ;
+    if(pedido.addCaldaChoc.checked)
+        celulaDescricao.innerHTML += "Calda de Chocolate <br>" ;
+    if(pedido.addCaramelo.checked)
+        celulaDescricao.innerHTML += "Caramelo <br>" ;
+    if(pedido.addLeite.checked)
+        celulaDescricao.innerHTML += "Leite <br>" ;
+        
+    celulaInput.innerHTML = "<input type='number' class='inp_num' style='margin-top: 10px;' value='1'>";
+    
+    var tabelaPedido = document.querySelector("#itensPedidos").querySelector("tbody");
+
+    linhaItem.appendChild(celulaTipoCafe);
+    linhaItem.appendChild(celulaTamanhoCafe);
+    linhaItem.appendChild(celulaDescricao);
+    linhaItem.appendChild(celulaInput);
+
+    tabelaPedido.appendChild(linhaItem);
+
+})
+
+botaoConfirmarPedido.addEventListener("click", function (event){
+    //event.preventDefault();
+
+    var tabelaPedido = document.querySelector("#itensPedidos");
+    var cafe = pedido.tipoCafe.value;
+
+    localStorage.setItem('valueText', cafe);
+    console.log(cafe);
 })
