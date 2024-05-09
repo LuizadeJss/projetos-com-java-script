@@ -3,35 +3,14 @@
     <head>
         <title>Pedido confirmado</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" >
+        <script src="scripts/js_mostrar_pedido.js" defer></script>
     </head>
     <body>
         <h2>
             Pedido de <h2 id="nome-cliente"></h2>
             
         </h2>
-        <div class="container-itens">
-            <div class="item">
-                <div class="alinhar-itens">
-                    <label id="nomeCafe"></label>
-                    <br>
-                    <label class="descricao">Adicionar: </label>
-                <script>
-                    var nome = document.querySelector("#nomeCafe");
-                    nome.innerHTML = localStorage.getItem('valueText');
-                </script>
-                </div>
-                <div class="alinhar-itens">
-                    <label>x 1</label>
-                </div>
-            </div>
-        </div>
-        <table>
-            <thead>
-
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
+        
+        <table id="itens_confirmados"></table>
     </body>
 </html>

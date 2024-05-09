@@ -9,11 +9,10 @@
         <header>
             <div class="menu-simples"></div>
                 <div class="titulo">
-                
-                    <label>Pedido de <label id="nome-cliente">(nome cliente)</label></label>
-                    <script>
+                    <label>Pedido de <label id="nome-cliente">Arthur</label></label>
+                    <script defer>
                         var nome = document.querySelector("#nome-cliente");
-                        nome.innerHTML = localStorage.getItem('nomeText');
+                        nome.textContent = localStorage.getItem('nomeText');
                     </script>
                 </div>   
         
@@ -23,7 +22,7 @@
         
         <div>
             <form action="pedido_confirmado.html" id="pedido">
-                    <script src="scripts/javascript.js" defer></script>
+                    <script src="scripts/gerar_pedido.js" defer></script>
                 <div class="container">
                      <div class="itens-adicionais">
                         <div class="alinhar-itens">
